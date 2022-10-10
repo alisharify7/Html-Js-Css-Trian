@@ -5,19 +5,27 @@
 }
 
 .accordion-wrapper > div.accordion-body{
-    display: none;
-    padding: 10px 10px 10px 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .8s;
 }
 
 .accordion > .accordion-wrapper.show > .accordion-body {
-    display: block;
+    padding: 10px 5px 10px 20px;
 }
+
 .accordion > .accordion-wrapper.show > .accordion-title {
     background-color:rgb(181, 181, 181);
 }
 
+
+
 .accordion-wrapper > div.accordion-title:hover{
     background-color: rgb(176, 176, 176)
+}
+
+.accordion > .accordion-wrapper.show > div.accordion-title:after{
+    content: "-";
 }
 
 .accordion-wrapper > div.accordion-title{
@@ -34,7 +42,7 @@
     align-items:center;
 }
 
-.accordion-wrapper > div.accordion-title:after{
+.accordion-wrapper > .accordion-title:after{
     content: "+";
 }
 

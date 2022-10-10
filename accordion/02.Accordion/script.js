@@ -9,10 +9,13 @@ accordions.forEach((each)=>{
             
             if(curent.classList.contains("show"))
             {
-                curent.classList.toggle("show")
+                curent.classList.toggle("show");
+                curent.children[1].style.maxHeight = 0 +"px"; 
             }
-            else{
+            else
+            {
                 curent.classList.toggle("show")
+                curent.children[1].style.maxHeight = curent.children[1].scrollHeight + 30 + "px"; 
             }
         })
     }
