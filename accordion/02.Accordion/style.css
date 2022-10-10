@@ -1,0 +1,44 @@
+.accordion{
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+}
+
+.accordion-wrapper > div.accordion-body{
+    display: none;
+    padding: 10px 10px 10px 20px;
+}
+
+.accordion-wrapper > div.accordion-body.show{
+    display: block;
+}
+
+.accordion-wrapper > div.accordion-title:hover{
+    background-color: rgb(176, 176, 176)
+}
+.accordion-wrapper > div.accordion-title{
+    transition: background-color 0.5s;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: #ccc;
+    cursor: pointer;
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.accordion-wrapper > div.accordion-title:after{
+    content: "+";
+}
+
+.accordion-wrapper > div.accordion-body{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.accordion-body > span{
+    color: royalblue;
+}
