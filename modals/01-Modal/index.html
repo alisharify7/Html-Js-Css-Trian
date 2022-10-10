@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<body>
+    
+    <div class="container">
+        <a id="open_modal" data-target="modal_singin" class="btn btn-custom" >
+            Lunch Modal
+        </a>
+    </div>
+
+    <div class="modal" id="modal_singin">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-flex justify-content-between">
+                    <p class="p-3">Login</p>
+                    <p class="p-3 text-muted close-modal" style="font-size:1.5rem ; cursor:pointer">&times;</p>
+                </div>
+            </div>
+            <div class="modal-body">
+
+                 <div class="my-3">
+                     <h3> Recipient: </h3>
+                     <input type="text" name="" id="">
+                 </div>
+                 <div class="my-3">
+                     <h3> Email: </h3>
+                     <input type="text" name="" id="">
+                 </div>
+                 <div class="my-3">
+                     <h3> temp : </h3>
+                     <input type="text" name="" id="">
+                 </div>
+                 <div class="my-3">
+                     <h3> temp : </h3>
+                     <input type="text" name="" id="">
+                 </div>
+                 <div class="my-3">
+                     <h3> temp : </h3>
+                     <input type="text" name="" id="">
+                 </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="close close-modal">Close</button>
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

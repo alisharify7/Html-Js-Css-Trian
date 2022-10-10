@@ -1,0 +1,153 @@
+*{
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;justify-content:center;
+    align-items:center;
+}
+
+.btn{
+    border: none;
+    padding: 1rem 1.5rem;
+}
+    
+.btn-custom{
+    background-color: rgb(34, 179, 205);
+    border-radius: 30px;
+    font-size:1.5rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color .8s;
+}
+.d-flex{
+    display: flex;
+}
+
+.p-3{
+    padding:10px 15px;
+}
+.justify-content-between{
+    justify-content:space-between;
+    align-items:center;
+}
+.btn-custom:hover{
+    cursor: pointer;
+    background-color: rgb(47, 207, 235);
+}
+
+.d-none{
+    display: none;
+}
+.text-muted{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.my-3{
+    margin: 10px 0;
+}
+h3{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.modal{
+    display: none;
+
+}
+
+.modal-backdrop{
+    transition: all .8s;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.modal-content{
+    position: fixed;
+    z-index: 200;
+    top: 15%;
+    left: 35%;
+    right: 35%;
+    bottom: 15%;
+
+    background-color:#fff ;
+}
+.modal-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.modal-header{
+    font-size: 2rem;
+    width: 100%;
+}
+.modal-body{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.modal-footer{
+    width: 100%;
+}
+.modal-header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+} 
+.modal-footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+input[type="text"]{
+    width: calc(100% - 30px) ;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    margin: 10px 15px;
+    height:40px;
+    border-radius:10px;
+}
+
+input[type="text"]::placeholder{
+    padding: 0 10px;
+    margin: 0 10px;
+    font-size: 1.5rem;;
+}
+
+button{
+    border: none;
+    padding:10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.close{
+    background-color: rgb(214, 65, 65); 
+    color:white;
+    cursor: pointer;
+}
+
+.submit{ 
+    background-color: rgb(27, 170, 27);
+    color:white;
+    cursor: pointer;
+}
