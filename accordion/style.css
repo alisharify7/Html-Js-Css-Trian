@@ -1,0 +1,24 @@
+.wrapper > p {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper > div{
+    padding: 10px;
+    margin: 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.wrapper > div{
+    display: none;
+}
+.wrapper.show > div{
+    display: block;
+}
