@@ -1,0 +1,24 @@
+.container{
+    margin: 0 10%;
+    text-align: justify;
+    font-size:1.3rem;
+    font-weight:bold;
+    line-height: 1.5;
+}
+
+.scroll{
+    color: orange;
+    background-color:black;
+    border-radius:100px;
+    margin: 10px 30px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: default;
+}
+.scroll.show{
+    cursor: pointer;
+    opacity: 100;
+}
