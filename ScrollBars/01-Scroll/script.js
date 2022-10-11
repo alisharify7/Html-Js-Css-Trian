@@ -3,7 +3,10 @@ document.addEventListener("scroll", function(e) {
     {
         document.querySelector(".scroll").classList.add("show");
         document.querySelector(".scroll").addEventListener("click", e => {
-            window.scrollTo({top:0, behavior:"smooth"});
+            if(window.scrollY >= 3500)
+            {
+                window.scrollTo({top:0, behavior:"smooth"});
+            }
         })
         
     }
