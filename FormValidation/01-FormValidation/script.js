@@ -4,7 +4,7 @@ form.addEventListener("submit", (e) => {
 });
 
 // regex for username
-user_pattern = /^[a-zA-Z][\w . _]{6,24}$/;
+user_pattern = /^[a-zA-Z][\w . _]{5,24}$/;
 // for english alphabetical
 password_pattern1 = /[a-z]/;
 password_pattern2 = /[A-Z]/;
@@ -44,6 +44,7 @@ form.password.addEventListener("keyup", (e) => {
       password_pattern1.test(e.target.value) &&
       password_pattern2.test(e.target.value) &&
       password_pattern3.test(e.target.value) &&
+      (e.target.value.length > 5) &&
       password_pattern4.test(e.target.value)
     ) {
       e.target.classList.remove("is-invalid");
