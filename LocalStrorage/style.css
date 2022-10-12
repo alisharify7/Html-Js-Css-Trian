@@ -1,0 +1,23 @@
+video{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.bi-trash-fill{
+    color: orangered;
+}
+
+span{
+    font-size: 1.4rem;
+}
