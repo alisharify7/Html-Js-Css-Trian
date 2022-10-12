@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <div class="container mt-3">
+        <h1>Form Validation</h1>
+        <div class="error-handler mt-5 mb-3">
+            <h6>Username: <span id="username_placholder">Please Enter Username</span></h6>
+            <h6>Password: <span id="password_placholder">Please Enter Password</span></h6>
+        </div>
+
+        <form action="?" method="get" class="form">
+            <div class="form-group" >
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username Here">                
+                <br>
+                <label for="password" class="form-label">password</label>
+                <input type="text" name="password" id="password" class="form-control" placeholder="Enter Password Here">                
+                <div class="form-check my-4">
+                    <input type="checkbox" name="rememberme" id="rem" class="form-check-input">
+                    <label for="rem" class="form-check-label">Remeber Me</label>
+                </div>
+
+                <div class="show_password my-3 d-flex justify-content-between align-items-center">
+                    <h6 id="see_password" class="cursor_pointer text-decoration-underline d-inline">click to see password:</h6>
+                    <span class="bg-primary rounded text-white" id="password_see"></span>
+                </div>
+                <input type="submit" value="Login" class="w-100 btn btn-success">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
