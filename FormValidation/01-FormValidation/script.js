@@ -1,6 +1,17 @@
 let form = document.querySelector(".form");
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  if(!(eu && ep))
+  {
+    e.preventDefault();
+  }
+  if(!eu)
+  {
+    form.username.classList.add("is-invalid")
+  }
+  if(!ep)
+  {
+    form.password.classList.add("is-invalid")
+  }
 });
 
 // regex for username
@@ -12,6 +23,9 @@ password_pattern2 = /[A-Z]/;
 password_pattern3 = /[0-9]/;
 // for symbols
 password_pattern4 = /[\W]/;
+
+let eu = false;
+let ep = false;
 
 let username_placholder = document.querySelector("#username_placholder");
 let password_placholder = document.querySelector("#password_placholder");
@@ -26,6 +40,7 @@ form.username.addEventListener("keyup", (e) => {
     if (user_pattern.test(e.target.value)) {
       e.target.classList.remove("is-invalid");
       e.target.classList.add("is-valid");
+      eu= true;
     } else {
       e.target.classList.remove("is-valid");
       e.target.classList.add("is-invalid");
@@ -50,6 +65,7 @@ form.password.addEventListener("keyup", (e) => {
       e.target.classList.remove("is-invalid");
       e.target.classList.add("is-valid");
       console.log(e.target.classList);
+      ep = true;
     } else {
       e.target.classList.add("is-invalid");
       e.target.classList.remove("is-valid");
