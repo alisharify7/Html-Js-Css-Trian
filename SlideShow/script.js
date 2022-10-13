@@ -1,6 +1,6 @@
 
 let active = 0; 
-let timer = 3000;
+let timer = 1000;
 
 let slides = document.querySelectorAll(".slide");
 let slideshow = document.querySelector(".slideshow");
@@ -47,13 +47,12 @@ function switchClasses() {
     goNext();
 })
 
-var nextinterval = window.setInterval(goNext, timer);
+let nextinterval = window.setInterval(goNext, timer);
 
-slides.forEach(slide => {
-    slide.addEventListener("mouseover", e => {
+slideshow.addEventListener("mouseover", e => {
         clearInterval(nextinterval);
-    })
-    slide.addEventListener("mouseout", e => {
+})
+
+slideshow.addEventListener("mouseleave", e => {
         nextinterval = window.setInterval(goNext, timer);
-    })
- })
+})
