@@ -31,20 +31,25 @@ let username_placholder = document.querySelector("#username_placholder");
 let password_placholder = document.querySelector("#password_placholder");
 
 form.username.addEventListener("keyup", (e) => {
-  if (e.target.value.length == 0) {
-    username_placholder.textContent = "Please Enter Username";
-    e.target.classList.remove("is-invalid");
-    e.target.classList.remove("valid");
-  } else {
+    if (e.target.value.length == 0)
+     {
+      username_placholder.textContent = "Please Enter Username";
+      e.target.classList.remove("is-invalid");
+      e.target.classList.remove("valid");
+     }
+     else
+     {
     username_placholder.textContent = e.target.value;
     if (user_pattern.test(e.target.value)) {
       e.target.classList.remove("is-invalid");
       e.target.classList.add("is-valid");
       eu= true;
-    } else {
+    } 
+    else
+     {
       e.target.classList.remove("is-valid");
       e.target.classList.add("is-invalid");
-    }
+     }
   }
 });
 
