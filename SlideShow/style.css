@@ -10,7 +10,15 @@
 .slide {
     display: none;
     position: relative;
+    animation:fade .5s;
 }
+
+@keyframes fade
+{
+    0%{ opacity: 0}
+    100%{ opacity: 1}
+}
+
 .slide.active {
     display:block;
 }
@@ -80,3 +88,8 @@
     background-color:rgba(82, 77, 77, 0.4);
     border-radius:50%;
 }
+
+.slide > img{
+    height:464px !important;
+    width: 696px !important;
+    }
